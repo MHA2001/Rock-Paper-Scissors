@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>rock paper scissors game</title>
+</head>
+<body>
+    <main>
+        <h1>Rock Paper Scissors</h1>
+        
+        <div class="flex-group">
+            <button onclick="playerMove('rock');" class = "move-button"  id="js-rock-button">
+                <img src="./images/rock-emoji.png"/>
+            </button>
+            <button  onclick="playerMove('paper');"   class = "move-button"  id="js-paper-button">
+                <img src="./images/paper-emoji.png"/>
+            </button>
+            <button onclick="playerMove('scissors');" class = "move-button"  id="js-scissor-button">
+                <img src="./images/scissors-emoji.png"/>
+            </button>
+        </div>
+        <h2 class="result" id="js-result" ></h2>
+        <p class="moves"><span id="js-playerLabel"></span> <img id="js-playerMove" src=""/> <span id="js-vs"></span> <img id="js-pcMove" src=""/><span id="js-pcLabel"></span> </p>
+        <p id="js-reset-button">Wins: <span id="js-win">0</span> | losses: <span id="js-loss">0</span> | Ties: <span id="js-tie">0</span></p>
+        <button onclick="reset();">Reset Score</button>
+    </main>
+    <script src="game.js" charset="UTF-8"></script>
+</body>
+</html>
